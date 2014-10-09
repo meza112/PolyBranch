@@ -685,10 +685,30 @@ class Player{
     pos = new PVector(width/2,height/2);
     r = 20;
     speed = 6;
+    hue = 0; 
+  }
+
+  HardMode(){
+    pos = new PVector(width/2, height/2);
+    r = 20;
+    speed = 10;
     hue = 0;
   }
 
-  
+  MediumMode(){
+    pos = new PVector(width/2, height/2);
+    r = 20;
+    speed = 8;
+    hue = 0;
+  }
+
+  EasyMode(){
+    pos = new PVector(width/2, height/2);
+    r = 20;
+    speed = 6;
+    hue = 0;
+  }
+  \
   public void reset(){
     pos.x = width/2;
     pos.y = width/2;

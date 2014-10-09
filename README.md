@@ -20,5 +20,5 @@ Font is [Wire One](http://www.google.com/webfonts/specimen/Wire+One) from [Googl
 The game graphics are designed by myself and drawn in realtime using Processing.js. The sounds are also created by myself using Logic Pro.
 
 To get started and clone the repository from git hub
-Type command:
+Type git command:
 	git clone git://github.com/gbatha/PolyBranch.git
