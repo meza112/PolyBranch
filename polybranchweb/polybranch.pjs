@@ -26,6 +26,9 @@ boolean paused;
 //Tree testTree;
 
 Player player;
+//Difficulty difficulty;
+
+
 Game g;
 
 PVector focalPoint;
@@ -54,6 +57,18 @@ void setup(){
   //testTree = new Tree(5, bob);
   
   player = new Player();
+  // difficulty = new difficulty(var hard);
+  // player = new player(difficulty.difficulty);
+  // if(player.diff == 'hard'){
+  //    player.speed = .8;
+  // }
+  // else if(player.diff == 'easy')
+  // {
+  //    player.speed = .5;
+  // }
+  hardMode = new HardMode();
+  easyMode = new EasyMode();
+
   g = new Game();
   //Layer layer = new Layer(16, width, height);
   noLoop();
@@ -688,27 +703,19 @@ class Player{
     hue = 0; 
   }
 
-  HardMode(){
-    pos = new PVector(width/2, height/2);
-    r = 20;
-    speed = 10;
-    hue = 0;
-  }
-
-  MediumMode(){
-    pos = new PVector(width/2, height/2);
-    r = 20;
-    speed = 8;
-    hue = 0;
-  }
-
-  EasyMode(){
-    pos = new PVector(width/2, height/2);
+/*  Player(var difficulty){
+    pos = new PVector(width/2,height/2);
     r = 20;
     speed = 6;
-    hue = 0;
+    hue = 0; 
+    diff = difficulty;
+  }*/
+
+  Difficulty(var choice){
+    var difficulty = choice;
   }
-  \
+
+  
   public void reset(){
     pos.x = width/2;
     pos.y = width/2;

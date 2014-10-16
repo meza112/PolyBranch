@@ -1,3 +1,4 @@
+
 var firstPlaythrough = true;
 var playing = false;
 
@@ -17,6 +18,20 @@ for(var i = 0; i < 10; i++){
 
 $(document).ready(function(){
 	$("#main-menu #start").click(function(){
+		if(!playing){
+			jsStartGame(false);
+			playing = true;
+		}
+	});
+
+	$("#main-menu #easy").click(function(){
+		if(!playing){
+			jsStartGame(false);
+			playing = true;
+		}
+	});
+
+	$("#main-menu #hard").click(function(){
 		if(!playing){
 			jsStartGame(false);
 			playing = true;
